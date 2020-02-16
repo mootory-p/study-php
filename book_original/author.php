@@ -16,7 +16,7 @@ $conn = mysqli_connect(
     <p><a href="index.php">topic</a></p>
     <table border="1">
       <tr>
-        <td>id</td><td>name</td><td>profile</td><td></td>
+        <td>id</td><td>name</td><td>profile</td><td></td><td></td></tr>
         <?php
         $sql = "SELECT * FROM author";
         $result = mysqli_query($conn, $sql);
@@ -38,11 +38,11 @@ $conn = mysqli_connect(
                 <input type="submit" value="delete">
               </form>
             </td>
+
+            <?php
+            }
+            ?>
           </tr>
-          <?php
-        }
-        ?>
-      </tr>
     </table>
     <?php
     $escaped = array(
